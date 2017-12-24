@@ -1,0 +1,440 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@2.15.9
+3 info using node@v4.5.0
+4 verbose readDependencies loading dependencies from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/package.json
+5 warn package.json loyalty@0.0.0 No license field.
+6 verbose install where, deps [ '/Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver',
+6 verbose install   [ 'bcrypt',
+6 verbose install     'body-parser',
+6 verbose install     'compression',
+6 verbose install     'cookie-session',
+6 verbose install     'cors',
+6 verbose install     'ejs',
+6 verbose install     'express',
+6 verbose install     'logfmt',
+6 verbose install     'method-override',
+6 verbose install     'nforce',
+6 verbose install     'node-uuid',
+6 verbose install     'pg',
+6 verbose install     'q',
+6 verbose install     'request',
+6 verbose install     'validator',
+6 verbose install     'winston' ] ]
+7 verbose install where, peers [ '/Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver',
+7 verbose install   [] ]
+8 verbose installManyTop reading for lifecycle /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/package.json
+9 info preinstall loyalty@0.0.0
+10 verbose installManyTop reading scoped package data from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/body-parser/package.json
+11 verbose installManyTop reading scoped package data from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/compression/package.json
+12 verbose installManyTop reading scoped package data from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/cookie-session/package.json
+13 verbose installManyTop reading scoped package data from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/cors/package.json
+14 verbose installManyTop reading scoped package data from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/ejs/package.json
+15 verbose installManyTop reading scoped package data from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/express/package.json
+16 verbose installManyTop reading scoped package data from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/logfmt/package.json
+17 verbose installManyTop reading scoped package data from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/method-override/package.json
+18 verbose installManyTop reading scoped package data from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/nforce/package.json
+19 verbose installManyTop reading scoped package data from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/node-uuid/package.json
+20 verbose installManyTop reading scoped package data from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/pg/package.json
+21 verbose installManyTop reading scoped package data from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/q/package.json
+22 verbose installManyTop reading scoped package data from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/request/package.json
+23 verbose installManyTop reading scoped package data from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/validator/package.json
+24 verbose installManyTop reading scoped package data from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/winston/package.json
+25 info package.json node-uuid@1.4.7 No license field.
+26 info package.json q@1.0.1 license should be a valid SPDX license expression
+27 info package.json ejs@1.0.0 No license field.
+28 info package.json nforce@0.8.0 license should be a valid SPDX license expression
+29 info package.json validator@3.5.1 No license field.
+30 info package.json winston@0.7.3 No license field.
+31 info package.json pg@2.11.1 No license field.
+32 verbose readDependencies loading dependencies from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/package.json
+33 verbose targetResolver reading package data from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/body-parser/package.json
+34 verbose targetResolver reading package data from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/compression/package.json
+35 verbose targetResolver reading package data from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/cookie-session/package.json
+36 verbose targetResolver reading package data from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/cors/package.json
+37 verbose targetResolver reading package data from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/ejs/package.json
+38 verbose targetResolver reading package data from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/express/package.json
+39 verbose targetResolver reading package data from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/logfmt/package.json
+40 verbose targetResolver reading package data from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/method-override/package.json
+41 verbose targetResolver reading package data from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/nforce/package.json
+42 verbose targetResolver reading package data from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/node-uuid/package.json
+43 verbose targetResolver reading package data from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/pg/package.json
+44 verbose targetResolver reading package data from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/q/package.json
+45 verbose targetResolver reading package data from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/request/package.json
+46 verbose targetResolver reading package data from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/validator/package.json
+47 verbose targetResolver reading package data from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/winston/package.json
+48 verbose targetResolver reading package data from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/.bin/logfmt/package.json
+49 verbose targetResolver reading package data from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/.bin/uuid/package.json
+50 verbose already installed skipping pg@~2.11.1 /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver
+51 verbose already installed skipping q@~1.0.1 /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver
+52 verbose already installed skipping request@~2.40.0 /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver
+53 verbose already installed skipping validator@~3.5.0 /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver
+54 verbose already installed skipping winston@~0.7.3 /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver
+55 silly cache add args [ 'bcrypt@~0.7.7', null ]
+56 verbose cache add spec bcrypt@~0.7.7
+57 silly cache add parsed spec Result {
+57 silly cache add   raw: 'bcrypt@~0.7.7',
+57 silly cache add   scope: null,
+57 silly cache add   name: 'bcrypt',
+57 silly cache add   rawSpec: '~0.7.7',
+57 silly cache add   spec: '>=0.7.7 <0.8.0',
+57 silly cache add   type: 'range' }
+58 silly addNamed bcrypt@>=0.7.7 <0.8.0
+59 verbose addNamed ">=0.7.7 <0.8.0" is a valid semver range for bcrypt
+60 silly addNameRange { name: 'bcrypt', range: '>=0.7.7 <0.8.0', hasData: false }
+61 silly mapToRegistry name bcrypt
+62 silly mapToRegistry using default registry
+63 silly mapToRegistry registry https://registry.npmjs.org/
+64 silly mapToRegistry data Result {
+64 silly mapToRegistry   raw: 'bcrypt',
+64 silly mapToRegistry   scope: null,
+64 silly mapToRegistry   name: 'bcrypt',
+64 silly mapToRegistry   rawSpec: '',
+64 silly mapToRegistry   spec: 'latest',
+64 silly mapToRegistry   type: 'tag' }
+65 silly mapToRegistry uri https://registry.npmjs.org/bcrypt
+66 verbose addNameRange registry:https://registry.npmjs.org/bcrypt not in flight; fetching
+67 verbose already installed skipping body-parser@~1.3.0 /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver
+68 verbose already installed skipping compression@~1.0.11 /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver
+69 verbose already installed skipping cookie-session@~1.0.2 /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver
+70 verbose already installed skipping cors@^2.5.2 /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver
+71 verbose already installed skipping ejs@~1.0.0 /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver
+72 verbose already installed skipping express@~4.4.1 /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver
+73 verbose already installed skipping logfmt@~0.21.0 /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver
+74 verbose already installed skipping method-override@~2.0.1 /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver
+75 verbose already installed skipping nforce@~0.8.0-beta.1 /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver
+76 verbose already installed skipping node-uuid@~1.4.1 /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver
+77 verbose request uri https://registry.npmjs.org/bcrypt
+78 verbose request no auth needed
+79 info attempt registry request try #1 at 11:21:06 PM
+80 verbose request id 3770039ae97fe41b
+81 verbose etag W/"58c7f09b-16e05"
+82 verbose lastModified Tue, 14 Mar 2017 13:31:07 GMT
+83 http request GET https://registry.npmjs.org/bcrypt
+84 http 304 https://registry.npmjs.org/bcrypt
+85 verbose headers { date: 'Thu, 16 Mar 2017 12:21:06 GMT',
+85 verbose headers   via: '1.1 varnish',
+85 verbose headers   'cache-control': 'max-age=300',
+85 verbose headers   etag: 'W/"58c7f09b-16e05"',
+85 verbose headers   age: '27',
+85 verbose headers   connection: 'keep-alive',
+85 verbose headers   'x-served-by': 'cache-sin6920-SIN',
+85 verbose headers   'x-cache': 'HIT',
+85 verbose headers   'x-cache-hits': '1',
+85 verbose headers   'x-timer': 'S1489666866.702684,VS0,VE0',
+85 verbose headers   vary: 'Accept-Encoding' }
+86 silly get cb [ 304,
+86 silly get   { date: 'Thu, 16 Mar 2017 12:21:06 GMT',
+86 silly get     via: '1.1 varnish',
+86 silly get     'cache-control': 'max-age=300',
+86 silly get     etag: 'W/"58c7f09b-16e05"',
+86 silly get     age: '27',
+86 silly get     connection: 'keep-alive',
+86 silly get     'x-served-by': 'cache-sin6920-SIN',
+86 silly get     'x-cache': 'HIT',
+86 silly get     'x-cache-hits': '1',
+86 silly get     'x-timer': 'S1489666866.702684,VS0,VE0',
+86 silly get     vary: 'Accept-Encoding' } ]
+87 verbose etag https://registry.npmjs.org/bcrypt from cache
+88 verbose get saving bcrypt to /Users/mmeisels/.npm/registry.npmjs.org/bcrypt/.cache.json
+89 verbose correctMkdir /Users/mmeisels/.npm correctMkdir not in flight; initializing
+90 silly addNameRange number 2 { name: 'bcrypt', range: '>=0.7.7 <0.8.0', hasData: true }
+91 silly addNameRange versions [ 'bcrypt',
+91 silly addNameRange   [ '0.1.2',
+91 silly addNameRange     '0.2.0',
+91 silly addNameRange     '0.2.1',
+91 silly addNameRange     '0.1.3',
+91 silly addNameRange     '0.2.2',
+91 silly addNameRange     '0.2.3',
+91 silly addNameRange     '0.2.4',
+91 silly addNameRange     '0.3.0',
+91 silly addNameRange     '0.3.1',
+91 silly addNameRange     '0.3.2',
+91 silly addNameRange     '0.4.0',
+91 silly addNameRange     '0.4.1',
+91 silly addNameRange     '0.5.0',
+91 silly addNameRange     '0.6.0',
+91 silly addNameRange     '0.7.0',
+91 silly addNameRange     '0.7.1',
+91 silly addNameRange     '0.7.2',
+91 silly addNameRange     '0.7.3',
+91 silly addNameRange     '0.7.4',
+91 silly addNameRange     '0.7.5',
+91 silly addNameRange     '0.7.6',
+91 silly addNameRange     '0.7.7',
+91 silly addNameRange     '0.7.8',
+91 silly addNameRange     '0.8.0',
+91 silly addNameRange     '0.8.1',
+91 silly addNameRange     '0.8.2',
+91 silly addNameRange     '0.8.3',
+91 silly addNameRange     '0.8.4',
+91 silly addNameRange     '0.8.5',
+91 silly addNameRange     '0.8.6',
+91 silly addNameRange     '0.8.7',
+91 silly addNameRange     '1.0.0',
+91 silly addNameRange     '1.0.1',
+91 silly addNameRange     '1.0.2' ] ]
+92 silly addNamed bcrypt@0.7.8
+93 verbose addNamed "0.7.8" is a plain semver version for bcrypt
+94 silly cache afterAdd bcrypt@0.7.8
+95 verbose afterAdd /Users/mmeisels/.npm/bcrypt/0.7.8/package/package.json not in flight; writing
+96 verbose correctMkdir /Users/mmeisels/.npm correctMkdir not in flight; initializing
+97 verbose afterAdd /Users/mmeisels/.npm/bcrypt/0.7.8/package/package.json written
+98 silly install resolved [ { name: 'bcrypt',
+98 silly install resolved     description: 'A bcrypt library for NodeJS.',
+98 silly install resolved     keywords:
+98 silly install resolved      [ 'bcrypt',
+98 silly install resolved        'password',
+98 silly install resolved        'auth',
+98 silly install resolved        'authentication',
+98 silly install resolved        'encryption',
+98 silly install resolved        'crypt',
+98 silly install resolved        'crypto' ],
+98 silly install resolved     main: './bcrypt',
+98 silly install resolved     version: '0.7.8',
+98 silly install resolved     author: { name: 'Nick Campbell', url: 'https://github.com/ncb000gt' },
+98 silly install resolved     engines: { node: '>= 0.6.0' },
+98 silly install resolved     repository:
+98 silly install resolved      { type: 'git',
+98 silly install resolved        url: 'git+https://github.com/ncb000gt/node.bcrypt.js.git' },
+98 silly install resolved     licenses: [ [Object] ],
+98 silly install resolved     bugs: { url: 'https://github.com/ncb000gt/node.bcrypt.js/issues' },
+98 silly install resolved     scripts:
+98 silly install resolved      { test: 'node-gyp configure build && nodeunit test',
+98 silly install resolved        install: 'node-gyp rebuild' },
+98 silly install resolved     dependencies: { bindings: '1.0.0' },
+98 silly install resolved     devDependencies: { nodeunit: '>=0.6.4' },
+98 silly install resolved     contributors:
+98 silly install resolved      [ [Object],
+98 silly install resolved        [Object],
+98 silly install resolved        [Object],
+98 silly install resolved        [Object],
+98 silly install resolved        [Object],
+98 silly install resolved        [Object],
+98 silly install resolved        [Object],
+98 silly install resolved        [Object],
+98 silly install resolved        [Object],
+98 silly install resolved        [Object],
+98 silly install resolved        [Object],
+98 silly install resolved        [Object],
+98 silly install resolved        [Object],
+98 silly install resolved        [Object] ],
+98 silly install resolved     gypfile: true,
+98 silly install resolved     homepage: 'https://github.com/ncb000gt/node.bcrypt.js',
+98 silly install resolved     _id: 'bcrypt@0.7.8',
+98 silly install resolved     dist:
+98 silly install resolved      { shasum: '42c99aac202918e947b5bd086110184f62745e3e',
+98 silly install resolved        tarball: 'https://registry.npmjs.org/bcrypt/-/bcrypt-0.7.8.tgz' },
+98 silly install resolved     _from: 'bcrypt@>=0.7.7 <0.8.0',
+98 silly install resolved     _npmVersion: '1.4.6',
+98 silly install resolved     _npmUser: { name: 'shtylman', email: 'shtylman@gmail.com' },
+98 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+98 silly install resolved     directories: {},
+98 silly install resolved     _shasum: '42c99aac202918e947b5bd086110184f62745e3e',
+98 silly install resolved     _resolved: 'https://registry.npmjs.org/bcrypt/-/bcrypt-0.7.8.tgz',
+98 silly install resolved     readme: 'ERROR: No README data found!' } ]
+99 info install bcrypt@0.7.8 into /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver
+100 info installOne bcrypt@0.7.8
+101 verbose installOne of bcrypt to /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver not in flight; installing
+102 verbose correctMkdir /Users/mmeisels/.npm/_locks correctMkdir not in flight; initializing
+103 verbose lock using /Users/mmeisels/.npm/_locks/bcrypt-15650b52301c38a5.lock for /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/bcrypt
+104 silly install write writing bcrypt 0.7.8 to /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/bcrypt
+105 verbose unbuild node_modules/bcrypt
+106 silly gentlyRm /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/bcrypt is being purged from base /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver
+107 verbose gentlyRm don't care about contents; nuking /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/bcrypt
+108 verbose tar unpack /Users/mmeisels/.npm/bcrypt/0.7.8/package.tgz
+109 verbose tar unpacking to /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/bcrypt
+110 silly gentlyRm /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/bcrypt is being purged
+111 verbose gentlyRm don't care about contents; nuking /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/bcrypt
+112 silly gunzTarPerm modes [ '755', '644' ]
+113 silly gunzTarPerm extractEntry package.json
+114 silly gunzTarPerm extractEntry .npmignore
+115 silly gunzTarPerm extractEntry README.md
+116 silly gunzTarPerm extractEntry LICENSE
+117 silly gunzTarPerm extractEntry bcrypt.js
+118 silly gunzTarPerm extractEntry Makefile
+119 silly gunzTarPerm extractEntry .travis.yml
+120 silly gunzTarPerm extractEntry binding.gyp
+121 silly gunzTarPerm extractEntry examples/async_compare.js
+122 silly gunzTarPerm extractEntry examples/forever_gen_salt.js
+123 silly gunzTarPerm extractEntry CHANGELOG
+124 silly gunzTarPerm extractEntry src/bcrypt.cc
+125 silly gunzTarPerm extractEntry src/bcrypt_node.cc
+126 silly gunzTarPerm extractEntry src/blowfish.cc
+127 silly gunzTarPerm extractEntry src/node_blf.h
+128 silly gunzTarPerm extractEntry test/async.js
+129 silly gunzTarPerm extractEntry test/repetitions.js
+130 silly gunzTarPerm extractEntry test/sync.js
+131 verbose write writing to /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/bcrypt/package.json
+132 info preinstall bcrypt@0.7.8
+133 verbose readDependencies loading dependencies from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/bcrypt/package.json
+134 silly prepareForInstallMany adding bindings@1.0.0 from bcrypt dependencies
+135 verbose readDependencies loading dependencies from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/bcrypt/package.json
+136 silly cache add args [ 'bindings@1.0.0', null ]
+137 verbose cache add spec bindings@1.0.0
+138 silly cache add parsed spec Result {
+138 silly cache add   raw: 'bindings@1.0.0',
+138 silly cache add   scope: null,
+138 silly cache add   name: 'bindings',
+138 silly cache add   rawSpec: '1.0.0',
+138 silly cache add   spec: '1.0.0',
+138 silly cache add   type: 'version' }
+139 silly addNamed bindings@1.0.0
+140 verbose addNamed "1.0.0" is a plain semver version for bindings
+141 silly mapToRegistry name bindings
+142 silly mapToRegistry using default registry
+143 silly mapToRegistry registry https://registry.npmjs.org/
+144 silly mapToRegistry data Result {
+144 silly mapToRegistry   raw: 'bindings',
+144 silly mapToRegistry   scope: null,
+144 silly mapToRegistry   name: 'bindings',
+144 silly mapToRegistry   rawSpec: '',
+144 silly mapToRegistry   spec: 'latest',
+144 silly mapToRegistry   type: 'tag' }
+145 silly mapToRegistry uri https://registry.npmjs.org/bindings
+146 verbose addNameVersion registry:https://registry.npmjs.org/bindings not in flight; fetching
+147 verbose request uri https://registry.npmjs.org/bindings
+148 verbose request no auth needed
+149 info attempt registry request try #1 at 11:21:06 PM
+150 verbose etag W/"580645d3-46f7"
+151 verbose lastModified Tue, 18 Oct 2016 15:54:59 GMT
+152 http request GET https://registry.npmjs.org/bindings
+153 http 304 https://registry.npmjs.org/bindings
+154 verbose headers { date: 'Thu, 16 Mar 2017 12:21:07 GMT',
+154 verbose headers   via: '1.1 varnish',
+154 verbose headers   'cache-control': 'max-age=300',
+154 verbose headers   etag: 'W/"580645d3-46f7"',
+154 verbose headers   age: '248',
+154 verbose headers   connection: 'keep-alive',
+154 verbose headers   'x-served-by': 'cache-sin6920-SIN',
+154 verbose headers   'x-cache': 'HIT',
+154 verbose headers   'x-cache-hits': '2',
+154 verbose headers   'x-timer': 'S1489666867.028457,VS0,VE0',
+154 verbose headers   vary: 'Accept-Encoding' }
+155 silly get cb [ 304,
+155 silly get   { date: 'Thu, 16 Mar 2017 12:21:07 GMT',
+155 silly get     via: '1.1 varnish',
+155 silly get     'cache-control': 'max-age=300',
+155 silly get     etag: 'W/"580645d3-46f7"',
+155 silly get     age: '248',
+155 silly get     connection: 'keep-alive',
+155 silly get     'x-served-by': 'cache-sin6920-SIN',
+155 silly get     'x-cache': 'HIT',
+155 silly get     'x-cache-hits': '2',
+155 silly get     'x-timer': 'S1489666867.028457,VS0,VE0',
+155 silly get     vary: 'Accept-Encoding' } ]
+156 verbose etag https://registry.npmjs.org/bindings from cache
+157 verbose get saving bindings to /Users/mmeisels/.npm/registry.npmjs.org/bindings/.cache.json
+158 verbose correctMkdir /Users/mmeisels/.npm correctMkdir not in flight; initializing
+159 silly cache afterAdd bindings@1.0.0
+160 verbose afterAdd /Users/mmeisels/.npm/bindings/1.0.0/package/package.json not in flight; writing
+161 verbose correctMkdir /Users/mmeisels/.npm correctMkdir not in flight; initializing
+162 verbose afterAdd /Users/mmeisels/.npm/bindings/1.0.0/package/package.json written
+163 silly install resolved [ { name: 'bindings',
+163 silly install resolved     description: 'Helper module for loading your native module\'s .node file',
+163 silly install resolved     keywords: [ 'native', 'addon', 'bindings', 'gyp', 'waf', 'c', 'c++' ],
+163 silly install resolved     version: '1.0.0',
+163 silly install resolved     author:
+163 silly install resolved      { name: 'Nathan Rajlich',
+163 silly install resolved        email: 'nathan@tootallnate.net',
+163 silly install resolved        url: 'http://tootallnate.net' },
+163 silly install resolved     repository:
+163 silly install resolved      { type: 'git',
+163 silly install resolved        url: 'git://github.com/TooTallNate/node-bindings.git' },
+163 silly install resolved     main: './bindings.js',
+163 silly install resolved     _id: 'bindings@1.0.0',
+163 silly install resolved     dist:
+163 silly install resolved      { shasum: 'c3ccde60e9de6807c6f1aa4ef4843af29191c828',
+163 silly install resolved        tarball: 'https://registry.npmjs.org/bindings/-/bindings-1.0.0.tgz' },
+163 silly install resolved     maintainers: [ [Object], [Object] ],
+163 silly install resolved     directories: {},
+163 silly install resolved     _shasum: 'c3ccde60e9de6807c6f1aa4ef4843af29191c828',
+163 silly install resolved     _resolved: 'https://registry.npmjs.org/bindings/-/bindings-1.0.0.tgz',
+163 silly install resolved     _from: 'bindings@1.0.0',
+163 silly install resolved     bugs: { url: 'https://github.com/TooTallNate/node-bindings/issues' },
+163 silly install resolved     readme: 'ERROR: No README data found!',
+163 silly install resolved     homepage: 'https://github.com/TooTallNate/node-bindings#readme' } ]
+164 info install bindings@1.0.0 into /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/bcrypt
+165 info installOne bindings@1.0.0
+166 verbose installOne of bindings to /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/bcrypt not in flight; installing
+167 verbose correctMkdir /Users/mmeisels/.npm/_locks correctMkdir not in flight; initializing
+168 verbose lock using /Users/mmeisels/.npm/_locks/bindings-8a2d5ce61e9c2d6c.lock for /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/bcrypt/node_modules/bindings
+169 silly install write writing bindings 1.0.0 to /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/bcrypt/node_modules/bindings
+170 verbose unbuild node_modules/bcrypt/node_modules/bindings
+171 silly gentlyRm /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/bcrypt/node_modules/bindings is being purged from base /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver
+172 verbose gentlyRm don't care about contents; nuking /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/bcrypt/node_modules/bindings
+173 verbose tar unpack /Users/mmeisels/.npm/bindings/1.0.0/package.tgz
+174 verbose tar unpacking to /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/bcrypt/node_modules/bindings
+175 silly gentlyRm /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/bcrypt/node_modules/bindings is being purged
+176 verbose gentlyRm don't care about contents; nuking /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/bcrypt/node_modules/bindings
+177 silly gunzTarPerm modes [ '755', '644' ]
+178 silly gunzTarPerm extractEntry package.json
+179 silly gunzTarPerm extractEntry README.md
+180 silly gunzTarPerm extractEntry bindings.js
+181 verbose write writing to /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/bcrypt/node_modules/bindings/package.json
+182 info preinstall bindings@1.0.0
+183 verbose readDependencies loading dependencies from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/bcrypt/node_modules/bindings/package.json
+184 verbose readDependencies loading dependencies from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/bcrypt/node_modules/bindings/package.json
+185 silly install resolved []
+186 verbose about to build /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/bcrypt/node_modules/bindings
+187 info build /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/bcrypt/node_modules/bindings
+188 info linkStuff bindings@1.0.0
+189 silly linkStuff bindings@1.0.0 has /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/bcrypt/node_modules as its parent node_modules
+190 verbose linkBins bindings@1.0.0
+191 verbose linkMans bindings@1.0.0
+192 verbose rebuildBundles bindings@1.0.0
+193 info install bindings@1.0.0
+194 info postinstall bindings@1.0.0
+195 verbose unlock done using /Users/mmeisels/.npm/_locks/bindings-8a2d5ce61e9c2d6c.lock for /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/bcrypt/node_modules/bindings
+196 verbose about to build /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/bcrypt
+197 info build /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/bcrypt
+198 info linkStuff bcrypt@0.7.8
+199 silly linkStuff bcrypt@0.7.8 has /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules as its parent node_modules
+200 verbose linkBins bcrypt@0.7.8
+201 verbose linkMans bcrypt@0.7.8
+202 verbose rebuildBundles bcrypt@0.7.8
+203 verbose rebuildBundles [ 'bindings' ]
+204 info install bcrypt@0.7.8
+205 verbose unsafe-perm in lifecycle true
+206 info bcrypt@0.7.8 Failed to exec install script
+207 verbose unlock done using /Users/mmeisels/.npm/_locks/bcrypt-15650b52301c38a5.lock for /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/bcrypt
+208 verbose stack Error: bcrypt@0.7.8 install: `node-gyp rebuild`
+208 verbose stack Exit status 1
+208 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:217:16)
+208 verbose stack     at emitTwo (events.js:87:13)
+208 verbose stack     at EventEmitter.emit (events.js:172:7)
+208 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+208 verbose stack     at emitTwo (events.js:87:13)
+208 verbose stack     at ChildProcess.emit (events.js:172:7)
+208 verbose stack     at maybeClose (internal/child_process.js:829:16)
+208 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+209 verbose pkgid bcrypt@0.7.8
+210 verbose cwd /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver
+211 error Darwin 16.3.0
+212 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+213 error node v4.5.0
+214 error npm  v2.15.9
+215 error code ELIFECYCLE
+216 error bcrypt@0.7.8 install: `node-gyp rebuild`
+216 error Exit status 1
+217 error Failed at the bcrypt@0.7.8 install script 'node-gyp rebuild'.
+217 error This is most likely a problem with the bcrypt package,
+217 error not with npm itself.
+217 error Tell the author that this fails on your system:
+217 error     node-gyp rebuild
+217 error You can get information on how to open an issue for this project with:
+217 error     npm bugs bcrypt
+217 error Or if that isn't available, you can get their info via:
+217 error
+217 error     npm owner ls bcrypt
+217 error There is likely additional logging output above.
+218 verbose exit [ 1, true ]
+219 verbose unbuild node_modules/bcrypt
+220 info preuninstall bcrypt@0.7.8
+221 info uninstall bcrypt@0.7.8
+222 verbose unbuild rmStuff bcrypt@0.7.8 from /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules
+223 info postuninstall bcrypt@0.7.8
+224 silly gentlyRm /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/bcrypt is being purged from base /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver
+225 verbose gentlyRm don't care about contents; nuking /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/bcrypt
+226 silly vacuum-fs purging /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules/bcrypt
+227 silly vacuum-fs quitting because other entries in /Users/mmeisels/Documents/Code/fixcoffee/meiselsfix/fixloyaltyserver/node_modules

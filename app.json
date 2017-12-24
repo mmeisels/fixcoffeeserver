@@ -1,0 +1,5 @@
+{
+    "name": "Fix Coffee",
+    "description": "Nibs with geolocation (iBeacon capability)",
+    "addons": ["heroku-postgresql:hobby-dev"]
+}
