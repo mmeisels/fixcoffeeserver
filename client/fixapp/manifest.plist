@@ -11,25 +11,25 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>https://fixipa.herokuapp.com/fix.ipa</string>
+					<string>https://fixloyalty.herokuapp.com/fixapp/FixLoyalty.ipa</string>
 				</dict>
 				<dict>
 					<key>kind</key>
 					<string>display-image</string>
 					<key>url</key>
-					<string>https://fixipa.herokuapp.com/icon57.png</string>
+					<string>https://fixloyalty.herokuapp.com/fixapp/icon57.png</string>
 				</dict>
 				<dict>
 					<key>kind</key>
 					<string>full-size-image</string>
 					<key>url</key>
-					<string>https://fixipa.herokuapp.com/icon512.png</string>
+					<string>https://fixloyalty.herokuapp.com/fixapp/icon512.png</string>
 				</dict>
 			</array>
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>com.fix.loyalty123</string>
+				<string>com.fix.loyaltyapp</string>
 				<key>bundle-version</key>
 				<string>1.1.1225</string>
 				<key>kind</key>
