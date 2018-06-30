@@ -33,9 +33,9 @@
 			<key>profile</key>
 			<dict>
 				<key>UUID</key>
-				<string>651ee9d7-2bf8-432e-a1a4-78752be2c974</string>
+				<string>0011d579-069b-4ca8-afe5-a723ac50a80c</string>
 				<key>name</key>
-				<string>iOS Team Provisioning Profile: *</string>
+				<string>iOS Team Provisioning Profile: com.fix.loyalty123</string>
 			</dict>
 			<key>team</key>
 			<dict>

@@ -7,11 +7,11 @@
 	<key>manifest</key>
 	<dict>
 		<key>appURL</key>
-		<string>https://fixloyaltysyd.herokuapp.com/app.ipa</string>
+		<string>https://fixipa.herokuapp.com/fix.ipa</string>
 		<key>displayImageURL</key>
-		<string>https://fixloyaltysyd.herokuapp.com/icon57x57.png</string>
+		<string>https://fixipa.herokuapp.com/icon57.png</string>
 		<key>fullSizeImageURL</key>
-		<string>https://fixloyaltysyd.herokuapp.com/Icon-512x512.png</string>
+		<string>https://fixipa.herokuapp.com/icon512.png</string>
 	</dict>
 	<key>method</key>
 	<string>development</string>
