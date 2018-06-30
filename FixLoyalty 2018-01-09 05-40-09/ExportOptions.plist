@@ -4,15 +4,6 @@
 <dict>
 	<key>compileBitcode</key>
 	<false/>
-	<key>manifest</key>
-	<dict>
-		<key>appURL</key>
-		<string>https://fixipa.herokuapp.com/fix.ipa</string>
-		<key>displayImageURL</key>
-		<string>https://fixipa.herokuapp.com/icon57.png</string>
-		<key>fullSizeImageURL</key>
-		<string>https://fixipa.herokuapp.com/icon512.png</string>
-	</dict>
 	<key>method</key>
 	<string>development</string>
 	<key>signingStyle</key>
@@ -20,7 +11,7 @@
 	<key>stripSwiftSymbols</key>
 	<true/>
 	<key>teamID</key>
-	<string>2F4ST2CG7J</string>
+	<string>4WQ2T93P22</string>
 	<key>thinning</key>
 	<string>&lt;none&gt;</string>
 </dict>
