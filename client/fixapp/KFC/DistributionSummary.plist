@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FixLoyalty.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>D3573DB14DB40775AF52C333280E901ED4DA28BE</string>
+				<key>dateExpires</key>
+				<string>17/12/18</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>4WQ2T93P22.com.fix.loyalty.kfcth.app</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>4WQ2T93P22</string>
+				<key>get-task-allow</key>
+				<false/>
+			</dict>
+			<key>name</key>
+			<string>KFC TH Demo.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>746f5be2-e870-4d9b-a532-d2d073edd9ca</string>
+				<key>name</key>
+				<string>iOS Team Inhouse Provisioning Profile: com.fix.loyalty.kfcth.app</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>4WQ2T93P22</string>
+				<key>name</key>
+				<string>salesforce.com, inc</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
