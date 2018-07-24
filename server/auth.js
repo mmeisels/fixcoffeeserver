@@ -141,12 +141,15 @@ function signup(req, res, next) {
     if (!validator.isEmail(user.email)) {
         return res.send(400, "Invalid email address");
     }
+    winston.info('email ' + user.firstName);
     if (!validator.isLength(user.firstName, 1) || !validator.isAlphanumeric(user.firstName)) {
         return res.send(400, "First name must be at least one character");
     }
+    winston.info('email ' + user.lastName);
     if (!validator.isLength(user.lastName, 1) || !validator.isAlphanumeric(user.lastName)) {
         return res.send(400, "Last name must be at least one character");
     }
+    winston.info('email ' + user.password);
     if (!validator.isLength(user.password, 4)) {
         return res.send(400, "Password must be at least 4 characters");
     }
