@@ -153,7 +153,7 @@ function signup(req, res, next) {
     if (!validator.isLength(user.password, 4)) {
         return res.send(400, "Password must be at least 4 characters");
     }
-winston.info('signup 2');
+    winston.info('signup 2');
 
     db.query('SELECT id FROM salesforce.contact WHERE email=$1', [user.email], true)
         .then(function (u) {
@@ -209,7 +209,6 @@ function createUser(user, password) {
                 });
             }
         })
-        .catch(next);
     return deferred.promise;
 };
 
