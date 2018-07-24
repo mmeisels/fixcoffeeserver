@@ -196,7 +196,7 @@ function createUser(user, password) {
                 // First time this Facebook user logs in (and we don't have a user with that email address)
                 // Create a user
                 winston.info('First time this Email Password user logs in');
-                winston.info("Creating user: " + JSON.stringify(fbUser));
+                winston.info("Creating user: " + JSON.stringify(user));
                 var externalUserId = (+new Date()).toString(36); // TODO: more robust UID logic
                 var pictureURL = '';
                 db.query('INSERT INTO salesforce.contact (email, password__c, firstname, lastname, leadsource, loyaltyid__c, accountid) VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING id, firstName, lastName, email, contact__loyaltyid__c as externalUserId',
