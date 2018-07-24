@@ -197,7 +197,7 @@ function createUser(user, password) {
                 var pictureURL = '';
                 winston.info('DB Query');
                 db.query('INSERT INTO salesforce.contact (email, password__c, firstname, lastname, leadsource, loyaltyid__c, accountid) VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING id, firstName, lastName, email, contact__loyaltyid__c as externalUserId',
-                   [user.email, password, user.firstName, 'Loyalty App', user.lastName, 'Loyalty App', externalUserId, config.contactsAccountId], true)
+                   [user.email, password, user.firstName, user.lastName, 'Loyalty App', externalUserId, config.contactsAccountId], true)
                 .then(function (insertedUser) {
                     winston.info('Inserted Query');
                         deferred.resolve(insertedUser);
