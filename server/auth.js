@@ -188,28 +188,30 @@ function createUser(user, password) {
         externalUserId = (+new Date()).toString(36); // TODO: more robust UID logic
         db.query('SELECT id, firstName, lastName, email FROM salesforce.contact WHERE email=$1', [user.email], true)
         .then(function (user) {
-            if (user) {
+            if (!user) {
                 // We already have a user with that email address
                 // Add Facebook id to user record
                 winston.info('We already have a user with that email address.');
-            } else (user){
-                // First time this Facebook user logs in (and we don't have a user with that email address)
-                // Create a user
-                winston.info('First time this Email Password user logs in');
-                winston.info("Creating user: " + user.email);
-                var externalUserId = (+new Date()).toString(36); // TODO: more robust UID logic
-                var pictureURL = '';
-                winston.info('DB Query');
-                db.query('INSERT INTO salesforce.contact (email, password__c, firstname, lastname, leadsource, loyaltyid__c, accountid) VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING id, firstName, lastName, email, contact__loyaltyid__c as externalUserId',
-                   [user.email, password, user.firstName, 'Loyalty App', user.lastName, 'Loyalty App', externalUserId, config.contactsAccountId], true)
-                .then(function (insertedUser) {
-                    winston.info('Inserted Query');
-                        deferred.resolve(insertedUser);
-                })
-                .catch(function(err) {
-                        winston.info('Error Query');
-                        deferred.reject(err);
-                });
+            } else {
+                function (user) {
+                    // First time this Facebook user logs in (and we don't have a user with that email address)
+                    // Create a user
+                    winston.info('First time this Email Password user logs in');
+                    winston.info("Creating user: " + user.email);
+                    var externalUserId = (+new Date()).toString(36); // TODO: more robust UID logic
+                    var pictureURL = '';
+                    winston.info('DB Query');
+                    db.query('INSERT INTO salesforce.contact (email, password__c, firstname, lastname, leadsource, loyaltyid__c, accountid) VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING id, firstName, lastName, email, contact__loyaltyid__c as externalUserId',
+                       [user.email, password, user.firstName, 'Loyalty App', user.lastName, 'Loyalty App', externalUserId, config.contactsAccountId], true)
+                    .then(function (insertedUser) {
+                        winston.info('Inserted Query');
+                            deferred.resolve(insertedUser);
+                    })
+                    .catch(function(err) {
+                            winston.info('Error Query');
+                            deferred.reject(err);
+                    });
+                }
             }
         })
     return deferred.promise;
