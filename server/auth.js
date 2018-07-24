@@ -192,7 +192,7 @@ function createUser(user, password) {
                 // We already have a user with that email address
                 // Add Facebook id to user record
                 winston.info('We already have a user with that email address.');
-            } else {
+            } else (user){
                 // First time this Facebook user logs in (and we don't have a user with that email address)
                 // Create a user
                 winston.info('First time this Email Password user logs in');
