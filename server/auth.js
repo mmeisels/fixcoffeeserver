@@ -187,8 +187,8 @@ function createUser(user, password) {
     var deferred = Q.defer(),
         externalUserId = (+new Date()).toString(36); // TODO: more robust UID logic
         db.query('SELECT id, firstName, lastName, email FROM salesforce.contact WHERE email=$1', [user.email], true)
-        .then(function (user) {
-            if (!user) {
+        .then(function (user1) {
+            if (!user1) {
                 // First time this Facebook user logs in (and we don't have a user with that email address)
                 // Create a user
                 winston.info('First time this Email Password user logs in');
