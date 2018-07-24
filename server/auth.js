@@ -196,15 +196,18 @@ function createUser(user, password) {
                 // First time this Facebook user logs in (and we don't have a user with that email address)
                 // Create a user
                 winston.info('First time this Email Password user logs in');
-                winston.info("Creating user: " + JSON.stringify(user));
+                winston.info("Creating user: " + user.email);
                 var externalUserId = (+new Date()).toString(36); // TODO: more robust UID logic
                 var pictureURL = '';
+                winston.info('DB Query');
                 db.query('INSERT INTO salesforce.contact (email, password__c, firstname, lastname, leadsource, loyaltyid__c, accountid) VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING id, firstName, lastName, email, contact__loyaltyid__c as externalUserId',
                    [user.email, password, user.firstName, 'Loyalty App', user.lastName, 'Loyalty App', externalUserId, config.contactsAccountId], true)
                 .then(function (insertedUser) {
+                    winston.info('Inserted Query');
                         deferred.resolve(insertedUser);
                 })
                 .catch(function(err) {
+                        winston.info('Error Query');
                         deferred.reject(err);
                 });
             }
