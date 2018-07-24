@@ -178,13 +178,12 @@ function createUser(user, password) {
 
     var deferred = Q.defer(),
         externalUserId = (+new Date()).toString(36); // TODO: more robust UID logic
-        db.query('SELECT id, firstName, lastName, email FROM salesforce.contact WHERE email=$1', [fbUser.email], true)
+        db.query('SELECT id, firstName, lastName, email FROM salesforce.contact WHERE email=$1', [user.email], true)
         .then(function (user) {
             if (user) {
                 // We already have a user with that email address
                 // Add Facebook id to user record
                 winston.info('We already have a user with that email address.');
-                updateUser(user, fbUser.id).then(createAndSendToken).catch(next);
             } else {
                 // First time this Facebook user logs in (and we don't have a user with that email address)
                 // Create a user
@@ -192,18 +191,14 @@ function createUser(user, password) {
                 winston.info("Creating user: " + JSON.stringify(fbUser));
                 var externalUserId = (+new Date()).toString(36); // TODO: more robust UID logic
                 var pictureURL = '';
-                return db.query(
-                    // 'UPDATE salesforce.contact SET email=$1, firstname=$2, lastname=$3, leadsource=$4, fbUserId__c=$5, gender__c=$6, pictureURL__c=$7, loyaltyid__c=$8, accountid=$9 WHERE email=$1 RETURNING id, firstName, lastName, email, gender__c as gender, pictureURL__c as pictureURL, loyaltyid__c as externalUserId',
-                    // [fbUser.email, fbUser.first_name, fbUser.last_name, 'Loyalty App', fbUser.id, fbUser.gender, pictureURL, externalUserId, config.contactsAccountId], true);
-
-                   'INSERT INTO salesforce.contact (email, password__c, firstname, lastname, leadsource, loyaltyid__c, accountid) VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING id, firstName, lastName, email, contact__loyaltyid__c as externalUserId',
-                   [user.email, password, user.firstName, 'Loyalty App', user.lastName, 'Loyalty App', externalUserId, config.contactsAccountId], true);}
-                    .then(function (insertedUser) {
+                db.query('INSERT INTO salesforce.contact (email, password__c, firstname, lastname, leadsource, loyaltyid__c, accountid) VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING id, firstName, lastName, email, contact__loyaltyid__c as externalUserId',
+                   [user.email, password, user.firstName, 'Loyalty App', user.lastName, 'Loyalty App', externalUserId, config.contactsAccountId], true)
+                .then(function (insertedUser) {
                         deferred.resolve(insertedUser);
-                    })
-                    .catch(function(err) {
+                })
+                .catch(function(err) {
                         deferred.reject(err);
-                    });
+                });
             }
         })
         .catch(next);
