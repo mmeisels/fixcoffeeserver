@@ -152,10 +152,13 @@ function signup(req, res, next) {
 
     db.query('SELECT id FROM salesforce.contact WHERE email=$1', [user.email], true)
         .then(function (u) {
+            winston.info('In the user check');
             if(u) {
+                winston.info('User exists');
                 return next(new Error('Email address already registered'));
             }
             encryptPassword(user.password, function (err, hash) {
+                winston.info('User Does not exist');
                 if (err) return next(err);
                 createUser(user, hash)
                     .then(function () {
