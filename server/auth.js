@@ -196,11 +196,13 @@ function createUser(user, password) {
                 var externalUserId = (+new Date()).toString(36); // TODO: more robust UID logic
                 var pictureURL = '';
                 winston.info('DB Query');
-                db.query('INSERT INTO salesforce.contact (email, password__c, firstname, lastname, leadsource, loyaltyid__c, accountid) VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING id, firstName, lastName, email, contact__loyaltyid__c as externalUserId',
-                   [user.email, password, user.firstName, user.lastName, 'Loyalty App', externalUserId, config.contactsAccountId], true)
+                db.query('INSERT INTO salesforce.contact (email, password__c, firstname, lastname, leadsource, loyaltyid__c, accountid) VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING id, firstName, lastName, email, gender__c as gender, pictureURL__c as pictureURL, loyaltyid__c as externalUserId'
+                    //RETURNING id, firstName, lastName, email, gender__c as gender, pictureURL__c as pictureURL, loyaltyid__c as externalUserId'
+                    //RETURNING id, firstName, lastName, email, contact__loyaltyid__c as externalUserId',
+                   [id, user.firstName, user.lastName,user.email, '', '',externalUserId], true)
                 .then(function (insertedUser) {
                     winston.info('Inserted Query');
-                        deferred.resolve(insertedUser);
+                    deferred.resolve(insertedUser);
                 })
                 .catch(function(err) {
                         winston.info('Error Query');
