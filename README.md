@@ -16,7 +16,7 @@ This application manages two iBeacons: one send a notification "Welcome to your 
 
 You will need the following things properly installed on your computer.
 
-* [Git](http://git-scm.com/)
+* [Git](http://git-scm.com/)dsjdskkmlsdkmdsksjd
 * [Node.js](http://nodejs.org/) (with NPM) 0.10.x
 * [PostgreSQL](http://www.postgresql.org/)
 * [Python](https://www.python.org/) 2.7.x
